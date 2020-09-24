@@ -1,0 +1,192 @@
+html {
+  font-family: Verdana, Geneva, sans-serif;
+  scroll-snap-type: y proximity;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/*
+HEADER
+*/
+
+header {
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 3px 10px #00000019;
+  z-index: 20;
+  scroll-snap-align: start;
+}
+
+header .logo img {
+  margin-top: 20px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+/*
+CONTENT
+*/
+
+.content {
+  color: #b2b2b2;
+  padding: 100px 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-snap-align: start;
+}
+
+.logo-box {
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box::after {
+  content: "";
+  width: 60%;
+  max-width: 300px;
+  height: 75%;
+  background-color: #ccc;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0 3px 10px #00000019;
+}
+
+.logo-box img {
+  max-width: 100%;
+  width: 500px;
+  z-index: 2;
+}
+
+.info {
+  background-color: #fff;
+  padding: 30px;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 400px;
+  height: 60vh;
+  box-shadow: 0 3px 10px #00000019;
+  margin: 10px 2%;
+}
+
+.info .category {
+  position: absolute;
+  top: -10px;
+  background-color: #ccc;
+  padding: 5px;
+  color: #fff;
+}
+
+.info .links {
+  text-align: right;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.links a {
+  color: #b2b2b2;
+  font-size: 2em;
+}
+.links .primary-link {
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .content .container {
+    display: grid;
+  }
+
+  #rascal .container,
+  #fogo-brasa .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1em;
+  }
+
+  #rascal .info,
+  #fogo-brasa .info {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  #rascal .logo-box,
+  #fogo-brasa .logo-box {
+    grid-column: 2/3;
+    grid-row: 1;
+    height: auto;
+    width: 100%;
+  }
+
+  #rascal .logo-box::after,
+  #fogo-brasa .logo-box::after {
+    height: 97%;
+  }
+}
+
+/*Rascal*/
+
+#rascal {
+  background-image: url("../img/background-rascal-1.png");
+}
+
+#rascal .logo-box::after {
+  background-color: #3771b8;
+}
+
+#rascal .primary-link {
+  color: #3771b8;
+}
+
+#rascal .category {
+  background-color: #3771b8;
+}
+
+/*Fogo&Brasa*/
+
+#fogo-brasa {
+  background-image: url("../img/background-fogo-brasa.png");
+}
+
+#fogo-brasa .logo-box::after {
+  background-color: #110a09;
+}
+
+#fogo-brasa .primary-link {
+  color: #ff9c00;
+}
+
+#fogo-brasa .category {
+  background-color: #ff9c00;
+}
+
+/*apps*/
+
+#apps {
+  background-color: #faebd7;
+}
