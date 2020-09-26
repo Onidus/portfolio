@@ -1,21 +1,22 @@
 html {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   scroll-snap-type: y proximity;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 500px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 4em;
+  margin: 0;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /*
@@ -45,7 +46,6 @@ CONTENT
 
 .content {
   color: #b2b2b2;
-  padding: 100px 0;
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -83,50 +83,49 @@ CONTENT
 }
 
 .info {
-  background-color: #fff;
-  padding: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   box-sizing: border-box;
   position: relative;
-  min-height: 400px;
-  height: 60vh;
-  box-shadow: 0 3px 10px #00000019;
-  margin: 10px 2%;
+  min-height: 275px;
 }
 
-.info .category {
-  position: absolute;
-  top: -10px;
-  background-color: #ccc;
-  padding: 5px;
-  color: #fff;
+.info p {
+  text-align: justify;
 }
 
 .info .links {
   text-align: right;
   position: absolute;
-  bottom: 30px;
-  right: 30px;
-}
-.links a {
-  color: #b2b2b2;
-  font-size: 2em;
-}
-.links .primary-link {
-  font-size: 3em;
-  line-height: 1.5em;
-  font-weight: bold;
+  bottom: 0;
+  right: 0;
 }
 
-@media (min-width: 1024px) {
-  .content .container {
+.links a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.links .primary-link {
+  font-size: 2em;
+  line-height: 1.5em;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+@media (min-width: 990px) {
+  .container {
     display: grid;
+    max-width: 1200px;
+  }
+
+  .content {
+    padding: 0 10px;
   }
 
   #rascal .container,
   #fogo-brasa .container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 1em;
+    grid-gap: 2em;
   }
 
   #rascal .info,
@@ -145,7 +144,11 @@ CONTENT
 
   #rascal .logo-box::after,
   #fogo-brasa .logo-box::after {
-    height: 97%;
+    height: 100%;
+  }
+
+  #apps.content {
+    padding: 0;
   }
 }
 
@@ -155,15 +158,19 @@ CONTENT
   background-image: url("../img/background-rascal-1.png");
 }
 
+#rascal h2 {
+  color: #3771b8;
+}
+
+#rascal p {
+  color: #4c260f;
+}
+
 #rascal .logo-box::after {
   background-color: #3771b8;
 }
 
 #rascal .primary-link {
-  color: #3771b8;
-}
-
-#rascal .category {
   background-color: #3771b8;
 }
 
@@ -173,20 +180,48 @@ CONTENT
   background-image: url("../img/background-fogo-brasa.png");
 }
 
+#fogo-brasa h2 {
+  color: #ff9c00;
+}
+
+#fogo-brasa p {
+  color: #f2dfd2;
+}
+
 #fogo-brasa .logo-box::after {
   background-color: #110a09;
 }
 
 #fogo-brasa .primary-link {
-  color: #ff9c00;
-}
-
-#fogo-brasa .category {
   background-color: #ff9c00;
+  color: #110a09;
 }
 
 /*apps*/
 
 #apps {
   background-color: #faebd7;
+}
+
+#apps > div {
+  min-height: 100vh;
+}
+
+#app1 {
+  background-color: #ccc;
+}
+
+#app2 {
+  background-color: #ddd;
+}
+
+#app3 {
+  background-color: #eee;
+}
+
+@media (min-width: 1420px) {
+  #apps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
