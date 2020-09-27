@@ -254,6 +254,7 @@ CONTENT
 
 #apps {
   background-color: #faebd7;
+  padding: 0;
 }
 
 #apps > div {
@@ -262,6 +263,7 @@ CONTENT
   background-image: url(../img/pattern-spike20.png);
   text-align: center;
   overflow: hidden;
+  width: 100%;
 }
 
 #app1 {
