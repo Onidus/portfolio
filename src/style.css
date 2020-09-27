@@ -56,6 +56,7 @@ CONTENT
   box-sizing: border-box;
   align-items: center;
   display: flex;
+  flex-flow: wrap;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
