@@ -1,0 +1,125 @@
+.eas {
+  margin-top: 40px;
+  text-align: center;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #a6c5e2;
+  -webkit-box-shadow: 0px 10px 0px 0px #86a4bc,
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 10px 0px 0px #86a4bc,
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 10px 0px 0px #86a4bc, 0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+}
+
+.eas-container {
+  width: 460px;
+  padding-top: 460px;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.eas-nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#grid-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 8px;
+  background-color: white;
+
+  box-shadow: inset 0px 5px 0px 0px #86a4bc;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#grid-box div {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-pixel {
+  display: inline-block;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.03);
+}
+
+.disableselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge*/
+  user-select: none; /* Non-prefixed version, currently 
+                                    not supported by any browser */
+}
+
+.disabledrag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+#color-box {
+  font-size: 0;
+  border: 1px solid #86a4bc;
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#color-box button {
+  width: 30px;
+  height: 33px;
+  margin: 2px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0px -3px 0px 0px #86a4bc;
+}
+
+#btn-black,
+#btn-d-grey,
+#btn-grey,
+#btn-l-grey,
+#btn-white {
+  border-radius: 0;
+  margin: 0 auto;
+}
+
+#btn-black {
+  background-color: black;
+}
+#btn-d-grey {
+  background-color: dimgrey;
+}
+#btn-grey {
+  background-color: darkgrey;
+}
+#btn-l-grey {
+  background-color: lightgrey;
+}
+#btn-white {
+  background-color: white;
+}
+
+#color-box button.selected {
+  height: 30px;
+  box-shadow: inset 0px 1px 0px 0px #86a4bc;
+}

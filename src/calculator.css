@@ -1,0 +1,87 @@
+#calculator {
+  background-color: #c4ad9a;
+  width: 350px;
+  margin: 40px auto;
+  height: 550px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 0px 0px rgba(183, 162, 144, 1),
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 10px 0px 0px rgba(183, 162, 144, 1),
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 10px 0px 0px rgba(183, 162, 144, 1),
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+}
+
+#screen {
+  margin: 20px auto;
+  height: 95px;
+  display: inline-block;
+  width: 310px;
+  background-color: #c5d4c3;
+  border-radius: 10px;
+
+  -webkit-box-shadow: inset 0px 5px 0px 0px rgba(166, 190, 162, 1);
+  -moz-box-shadow: inset 0px 5px 0px 0px rgba(166, 190, 162, 1);
+  box-shadow: inset 0px 5px 0px 0px rgba(166, 190, 162, 1);
+}
+
+#history {
+  margin: 15px 10px 0;
+  text-align: right;
+  font-size: 0.9em;
+  height: 0.9em;
+  color: #859982;
+}
+
+#result {
+  text-align: right;
+  font-size: 2em;
+  margin: 20px 10px 0;
+  color: #5f735c;
+}
+
+.line {
+  margin-bottom: 10px;
+  font-size: 0;
+}
+
+#calculator button {
+  border: none;
+  height: 70px;
+  width: 70px;
+  margin: 0 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2);
+  background-color: #d2c1b3;
+  font-size: 1.2rem;
+  color: #0009;
+}
+
+#calculator .white-btn {
+  background-color: #dfcdbe;
+}
+
+#calculator #calc-equals {
+  background-color: #a1d272;
+}
+
+#calculator button:hover {
+  -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2),
+    inset 0 0 100px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2),
+    inset 0 0 100px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2),
+    inset 0 0 100px rgba(255, 255, 255, 0.2);
+}
+
+#calculator button:active {
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2),
+    inset 0 0 100px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2),
+    inset 0 0 100px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2),
+    inset 0 0 100px rgba(0, 0, 0, 0.1);
+}

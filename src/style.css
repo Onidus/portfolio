@@ -19,6 +19,11 @@ p {
   font-size: 1.2em;
 }
 
+a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
 /*
 HEADER
 */
@@ -47,9 +52,10 @@ CONTENT
 .content {
   color: #b2b2b2;
   min-height: 100vh;
+  padding: 20px 0;
   box-sizing: border-box;
-  display: flex;
   align-items: center;
+  display: flex;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -100,16 +106,46 @@ CONTENT
   right: 0;
 }
 
-.links a {
-  color: #fff;
-  font-size: 1.2em;
-}
-
-.links .primary-link {
+.primary-link {
   font-size: 2em;
   line-height: 1.5em;
-  padding: 5px 10px;
+  padding: 0 10px;
   text-decoration: none;
+  transition: all 0.2s ease-in;
+  position: relative;
+  border: 1px solid #999;
+  color: #999;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+
+.primary-link span {
+  position: relative;
+  z-index: 10;
+}
+
+.primary-link:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: -1px;
+  background-color: #999;
+  z-index: 0;
+  transition: transform 0.2s ease-in;
+}
+
+.primary-link:hover {
+  color: #ccc;
+}
+
+.primary-link:hover:before {
+  opacity: 1;
+  transform: scaleX(800);
 }
 
 @media (min-width: 990px) {
@@ -119,7 +155,7 @@ CONTENT
   }
 
   .content {
-    padding: 0 10px;
+    padding: 20px 10px;
   }
 
   #rascal .container,
@@ -171,6 +207,15 @@ CONTENT
 }
 
 #rascal .primary-link {
+  border-color: #3771b8;
+  color: #3771b8;
+}
+
+#rascal .primary-link:hover {
+  color: #fff;
+}
+
+#rascal .primary-link:before {
   background-color: #3771b8;
 }
 
@@ -193,8 +238,16 @@ CONTENT
 }
 
 #fogo-brasa .primary-link {
-  background-color: #ff9c00;
+  border-color: #ff9c00;
+  color: #ff9c00;
+}
+
+#fogo-brasa .primary-link:hover {
   color: #110a09;
+}
+
+#fogo-brasa .primary-link:before {
+  background-color: #ff9c00;
 }
 
 /*apps*/
@@ -205,18 +258,22 @@ CONTENT
 
 #apps > div {
   min-height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../img/pattern-spike20.png);
+  text-align: center;
+  overflow: hidden;
 }
 
 #app1 {
-  background-color: #ccc;
+  background-color: #4a769a;
 }
 
 #app2 {
-  background-color: #ddd;
+  background-color: #98704e;
 }
 
 #app3 {
-  background-color: #eee;
+  background-color: #6da032;
 }
 
 @media (min-width: 1420px) {

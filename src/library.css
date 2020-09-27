@@ -1,0 +1,143 @@
+input::placeholder {
+  color: #ccc;
+}
+
+#library {
+  margin: 40px auto;
+  max-width: 500px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 0px 0px #5caa6e,
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 10px 0px 0px #5caa6e,
+    0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 10px 0px 0px #5caa6e, 0px 40px 20px -10px rgba(0, 0, 0, 0.35);
+}
+
+#library a {
+  color: #ff9b7b;
+  cursor: pointer;
+}
+
+/*
+~SIDEBAR
+*/
+
+#sidebar {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 1em;
+  border-bottom: 3px solid #ddd;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 1em;
+  border: none;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 10px 0 20px;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border-top: 2px solid #ddd;
+}
+
+.full-size {
+  width: 100%;
+  display: inline-block;
+}
+.half-size {
+  width: 50%;
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+#add-book {
+  height: 40px;
+  border: none;
+  background-color: #8dffc0;
+  color: #42a66f;
+  font-size: 1em;
+}
+
+#add-book:hover {
+  background-color: #89fabc;
+}
+
+#add-book:active {
+  background-color: #7ee5ad;
+}
+
+/*
+~LIST
+*/
+
+#book-list {
+  min-height: 80px;
+  max-height: 600px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.list-item {
+  min-height: 80px;
+  box-sizing: border-box;
+  border-right: 10px solid transparent;
+  transition: opacity 0.25s ease-out, visibility 0.25s ease-out,
+    min-height 0.25s ease-out, border-color 0.25s ease;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
+}
+
+.poof {
+  opacity: 0;
+  min-height: 0px;
+  max-height: 0px;
+  visibility: hidden;
+}
+
+.read-item {
+  border-right: 10px solid #7ee5ad;
+}
+
+.item-left {
+  float: left;
+  width: 70%;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.item-right {
+  float: right;
+  margin: 17px 10px 0 0;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item h3 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  margin-left: 1em;
+  color: #777;
+}
+
+.list-item p {
+  color: #aaa;
+  line-height: 1.2em;
+  font-size: 0.9em;
+  margin: 5px 1em;
+}
+
+.delete-item {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.9em;
+}
