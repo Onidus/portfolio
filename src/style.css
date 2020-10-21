@@ -1,6 +1,5 @@
 html {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  scroll-snap-type: y proximity;
 }
 
 .container {
@@ -34,7 +33,6 @@ header {
   position: relative;
   box-shadow: 0 3px 10px #00000019;
   z-index: 20;
-  scroll-snap-align: start;
 }
 
 header .logo img {
@@ -284,4 +282,17 @@ CONTENT
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+#carousel {
+  overflow: hidden;
+}
+
+#carousel img {
+  display: none;
+  max-width: 100%;
+}
+
+#carousel .visible {
+  display: block;
 }

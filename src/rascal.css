@@ -1,0 +1,126 @@
+.container img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#rascal-logo {
+  background: url("../img/rascal-page-logo-bg.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#rascal-uchiwa {
+  background: url("../img/rascal-page-uchiwa-bg.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+#rascal-uchiwa .container {
+  height: 100vh;
+}
+
+#flip-msg {
+  margin: 50px auto;
+  width: 175px;
+}
+
+.arrow {
+  animation: jump 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes jump {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 10px;
+  }
+  20% {
+    left: 0px;
+  }
+  30% {
+    left: 10px;
+  }
+  40% {
+    left: 0px;
+  }
+}
+
+/*Flip animation*/
+.flip-card {
+  background-color: transparent;
+  max-width: 100%;
+  min-height: 75vh;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipping .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+#rascal-shirt {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  min-height: auto;
+}
+
+#rascal-shirt-image {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.shirt-bg {
+  position: relative;
+  background-image: linear-gradient(#d3e0ec, #f4c54d);
+  display: grid;
+  align-content: end;
+  height: 100%;
+}
+
+#rascal-shirt #rascal-shirt-text {
+  width: fit-content;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  max-width: 25vw;
+}
+
+@media (min-width: 990px) {
+  #rascal-shirt {
+    grid-template-columns: 3fr 4fr;
+  }
+}
