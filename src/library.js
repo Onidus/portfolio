@@ -1,5 +1,7 @@
+
 const library = document.getElementById("app3");
 library.innerHTML = `
+<h2>Library</h2>
 <div id="library" data-aos="fade-up">
     <div id="sidebar">
         <form id="form">

@@ -1,6 +1,7 @@
 const etchasketch = document.getElementById("app1");
 
 etchasketch.innerHTML = `
+<h2>Etch-a-sketch</h2>
 <div class="eas" data-aos="fade-up">
     <div class="eas-container">
         <div oncontextmenu="return false;" id="grid-box" class="flex-column disableselect disabledrag"></div>

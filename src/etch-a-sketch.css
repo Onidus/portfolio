@@ -123,3 +123,16 @@
   height: 30px;
   box-shadow: inset 0px 1px 0px 0px #86a4bc;
 }
+
+.eas-nav .primary-link {
+  color: #7d98b1;
+  border-color: #7d98b1;
+}
+
+.eas-nav .primary-link:hover {
+  color: #fff;
+}
+
+.eas-nav .primary-link::before {
+  background-color: #7d98b1;
+}

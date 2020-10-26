@@ -265,15 +265,23 @@ CONTENT
   width: 100%;
 }
 
-#app1 {
+#apps h2 {
+  line-height: 2em;
+  color: #ffffff30;
+}
+
+#app1,
+#app1 h2 {
   background-color: #4a769a;
 }
 
-#app2 {
+#app2,
+#app2 h2 {
   background-color: #98704e;
 }
 
-#app3 {
+#app3,
+#app3 h2 {
   background-color: #6da032;
 }
 
@@ -281,18 +289,6 @@ CONTENT
   #apps {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
   }
-}
-
-#carousel {
-  overflow: hidden;
-}
-
-#carousel img {
-  display: none;
-  max-width: 100%;
-}
-
-#carousel .visible {
-  display: block;
 }

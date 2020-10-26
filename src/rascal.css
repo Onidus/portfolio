@@ -119,7 +119,11 @@
   max-width: 25vw;
 }
 
-@media (min-width: 990px) {
+.shirt-picture {
+  width: 100%;
+}
+
+@media (orientation: landscape) {
   #rascal-shirt {
     grid-template-columns: 3fr 4fr;
   }

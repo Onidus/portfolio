@@ -1,6 +1,7 @@
 const calculator = document.getElementById("app2");
 
 calculator.innerHTML = `
+<h2>Calculator</h2>
 <div id="calculator" data-aos="fade-up">
     <div id="screen">
         <p id="history"></p>
