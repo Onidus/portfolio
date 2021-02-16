@@ -157,34 +157,62 @@ CONTENT
     padding: 20px 10px;
   }
 
-  #rascal .container,
-  #fogo-brasa .container {
+  .container.side-by-side {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 2em;
   }
 
-  #rascal .info,
-  #fogo-brasa .info {
+  .container.side-by-side .info {
     grid-column: 1/2;
     grid-row: 1;
   }
 
-  #rascal .logo-box,
-  #fogo-brasa .logo-box {
+  .container.side-by-side .logo-box {
     grid-column: 2/3;
     grid-row: 1;
     height: auto;
     width: 100%;
   }
 
-  #rascal .logo-box::after,
-  #fogo-brasa .logo-box::after {
+  .container.side-by-side .logo-box::after {
     height: 100%;
   }
 
   #apps.content {
     padding: 0;
   }
+}
+
+/*Todo app*/
+#todo-app {
+  background-color: #90e0ff;
+  background-image: url(../img/background-todo.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto;
+}
+
+#todo-app h2 {
+  color: #21c2ff;
+}
+
+#todo-app p {
+  color: #fff;
+  text-shadow: 1px 1px #21c2ff;
+}
+
+#todo-app .primary-link {
+  border-color: #fff;
+  color: #fff;
+}
+
+#todo-app .primary-link:hover {
+  color: #fff;
+  border-color: #21c2ff;
+}
+
+#todo-app .primary-link:before {
+  background-color: #21c2ff;
 }
 
 /*Rascal*/
